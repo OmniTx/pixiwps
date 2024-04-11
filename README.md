@@ -1,5 +1,5 @@
 ## PIXIWPS
-### Fimd WIfi Passwords Using Termux! (Requires Root)
+### Find Wifi Passwords Using Termux! (Requires Root)
 
 ### Installation :
 
