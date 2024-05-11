@@ -690,7 +690,13 @@ class Companion:
             try:
                 self.__wps_connection(bssid, pin, pixiemode)
             except KeyboardInterrupt:
-                print("\nAborting…")
+                print("\n░██╗░░░░░░░██╗░█████╗░██████╗░███╗░░██╗██╗███╗░░██╗░██████╗░██╗ 
+░██║░░██╗░░██║██╔══██╗██╔══██╗████╗░██║██║████╗░██║██╔════╝░██║ 
+░╚██╗████╗██╔╝███████║██████╔╝██╔██╗██║██║██╔██╗██║██║░░██╗░██║ 
+░░████╔═████║░██╔══██║██╔══██╗██║╚████║██║██║╚████║██║░░╚██╗╚═╝ 
+░░╚██╔╝░╚██╔╝░██║░░██║██║░░██║██║░╚███║██║██║░╚███║╚██████╔╝██╗ 
+░░░╚═╝░░░╚═╝░░╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝ 
+")
                 self.__savePin(bssid, pin)
                 return False
         else:
@@ -1184,12 +1190,24 @@ if __name__ == '__main__':
         except KeyboardInterrupt:
             if args.loop:
                 if input("\n[?] Exit the script (otherwise continue to AP scan)? [N/y] ").lower() == 'y':
-                    print("Aborting…\nWe do not take any responsibility for YOUR action\nOmniTx")
+                    print("░██░░░░░░░░██░░█████░░██████░░███░░░██░██░███░░░██░░██████░░██░ 
+░██░░░██░░░██░██░░░██░██░░░██░████░░██░██░████░░██░██░░░░░░░██░ 
+░░██░████░██░░███████░██████░░██░██░██░██░██░██░██░██░░░██░░██░ 
+░░████░░████░░██░░░██░██░░░██░██░░████░██░██░░████░██░░░░██░░░░ 
+░░░██░░░░██░░░██░░░██░██░░░██░██░░░███░██░██░░░███░░██████░░██░ 
+ 
+\nWe do not take any responsibility for YOUR action\nOmniTx")
                     break
                 else:
                     args.bssid = None
             else:
-                print("\nAborting…\nWe do not take any responsibility for YOUR action\nOmniTx")
+                print("░██░░░░░░░░██░░█████░░██████░░███░░░██░██░███░░░██░░██████░░██░ 
+░██░░░██░░░██░██░░░██░██░░░██░████░░██░██░████░░██░██░░░░░░░██░ 
+░░██░████░██░░███████░██████░░██░██░██░██░██░██░██░██░░░██░░██░ 
+░░████░░████░░██░░░██░██░░░██░██░░████░██░██░░████░██░░░░██░░░░ 
+░░░██░░░░██░░░██░░░██░██░░░██░██░░░███░██░██░░░███░░██████░░██░ 
+ 
+\nWe do not take any responsibility for YOUR action\nOmniTx")
                 break
 
     if args.iface_down:
